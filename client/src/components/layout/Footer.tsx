@@ -10,7 +10,7 @@ export function Footer() {
             <Link href="/">
               <a className="flex items-center gap-2">
                 <Building className="h-6 w-6 text-primary" />
-                <span className="font-bold text-xl">EstateHub</span>
+                <span className="font-bold text-xl">SafeHaven Realty</span>
               </a>
             </Link>
             <p className="text-sm text-muted-foreground mt-2">
@@ -130,7 +130,7 @@ export function Footer() {
         
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} EstateHub. All rights reserved.
+            &copy; {new Date().getFullYear()} SafeHaven Realty. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-muted-foreground hover:text-primary">
