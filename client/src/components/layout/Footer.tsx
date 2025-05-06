@@ -1,4 +1,4 @@
-import { Building } from "lucide-react";
+import { Building, Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "wouter";
 
 export function Footer() {
@@ -89,6 +89,30 @@ export function Footer() {
                     Contact Us
                   </a>
                 </Link>
+              </li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 className="text-sm font-semibold mb-4">Contact</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="flex items-center gap-2">
+                <Phone className="h-4 w-4 text-primary" />
+                <a href="tel:+14057231782" className="text-muted-foreground hover:text-primary transition-colors">
+                  +1 (405) 723-1782
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-primary" />
+                <a href="mailto:agentbernardologan@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  agentbernardologan@gmail.com
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-primary" />
+                <span className="text-muted-foreground">
+                  Oklahoma City, OK
+                </span>
               </li>
             </ul>
           </div>

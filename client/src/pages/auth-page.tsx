@@ -94,7 +94,7 @@ export default function AuthPage() {
         <div className="md:w-1/2 lg:pr-12">
           <Card className="border-none shadow-none">
             <CardHeader className="px-0 md:px-6">
-              <CardTitle className="text-3xl font-bold">Welcome to EstateHub</CardTitle>
+              <CardTitle className="text-3xl font-bold">Welcome to SafeHaven Realty</CardTitle>
               <CardDescription>
                 Sign in to your account or create a new one to start finding your dream property.
               </CardDescription>
