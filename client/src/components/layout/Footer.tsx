@@ -7,11 +7,9 @@ export function Footer() {
       <div className="container py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           <div className="flex flex-col gap-2">
-            <Link href="/">
-              <a className="flex items-center gap-2">
-                <Building className="h-6 w-6 text-primary" />
-                <span className="font-bold text-xl">SafeHaven Realty</span>
-              </a>
+            <Link href="/" className="flex items-center gap-2">
+              <Building className="h-6 w-6 text-primary" />
+              <span className="font-bold text-xl">SafeHaven Realty</span>
             </Link>
             <p className="text-sm text-muted-foreground mt-2">
               Your trusted partner for finding your dream property. Whether buying, selling, or renting, we've got you covered.
@@ -22,38 +20,38 @@ export function Footer() {
             <h4 className="text-sm font-semibold mb-4">Properties</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/properties?type=house">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Houses
-                  </a>
+                <Link 
+                  href="/properties?type=house"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Houses
                 </Link>
               </li>
               <li>
-                <Link href="/properties?type=apartment">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Apartments
-                  </a>
+                <Link 
+                  href="/properties?type=apartment"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Apartments
                 </Link>
               </li>
               <li>
-                <Link href="/properties?type=condo">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Condos
-                  </a>
+                <Link 
+                  href="/properties?type=condo"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Condos
                 </Link>
               </li>
               <li>
-                <Link href="/properties?type=commercial">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Commercial
-                  </a>
+                <Link 
+                  href="/properties?type=commercial"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Commercial
                 </Link>
               </li>
               <li>
-                <Link href="/properties?type=land">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Land
-                  </a>
+                <Link 
+                  href="/properties?type=land"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Land
                 </Link>
               </li>
             </ul>
@@ -63,31 +61,31 @@ export function Footer() {
             <h4 className="text-sm font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    About Us
-                  </a>
+                <Link 
+                  href="/about"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  About Us
                 </Link>
               </li>
               <li>
-                <Link href="/agents">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Our Agents
-                  </a>
+                <Link 
+                  href="/agents"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Our Agents
                 </Link>
               </li>
               <li>
-                <Link href="/careers">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Careers
-                  </a>
+                <Link 
+                  href="/careers"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Careers
                 </Link>
               </li>
               <li>
-                <Link href="/contact">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Contact Us
-                  </a>
+                <Link 
+                  href="/contact"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -121,31 +119,31 @@ export function Footer() {
             <h4 className="text-sm font-semibold mb-4">Legal</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/privacy">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Privacy Policy
-                  </a>
+                <Link 
+                  href="/privacy"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/terms">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Terms of Service
-                  </a>
+                <Link 
+                  href="/terms"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/cookie-policy">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Cookie Policy
-                  </a>
+                <Link 
+                  href="/cookie-policy"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Cookie Policy
                 </Link>
               </li>
               <li>
-                <Link href="/accessibility">
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
-                    Accessibility
-                  </a>
+                <Link 
+                  href="/accessibility"
+                  className="text-muted-foreground hover:text-primary transition-colors">
+                  Accessibility
                 </Link>
               </li>
             </ul>

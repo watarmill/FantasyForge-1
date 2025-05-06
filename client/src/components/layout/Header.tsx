@@ -41,20 +41,20 @@ export function Header() {
   
   const NavItems = () => (
     <>
-      <Link href="/">
-        <a className={`text-sm font-medium transition-colors hover:text-primary ${location === "/" ? "text-primary" : "text-foreground/80"}`}>
-          Home
-        </a>
+      <Link 
+        href="/" 
+        className={`text-sm font-medium transition-colors hover:text-primary ${location === "/" ? "text-primary" : "text-foreground/80"}`}>
+        Home
       </Link>
-      <Link href="/properties">
-        <a className={`text-sm font-medium transition-colors hover:text-primary ${location === "/properties" ? "text-primary" : "text-foreground/80"}`}>
-          Properties
-        </a>
+      <Link 
+        href="/properties" 
+        className={`text-sm font-medium transition-colors hover:text-primary ${location === "/properties" ? "text-primary" : "text-foreground/80"}`}>
+        Properties
       </Link>
-      <Link href="/agents">
-        <a className={`text-sm font-medium transition-colors hover:text-primary ${location === "/agents" ? "text-primary" : "text-foreground/80"}`}>
-          Agents
-        </a>
+      <Link 
+        href="/agents" 
+        className={`text-sm font-medium transition-colors hover:text-primary ${location === "/agents" ? "text-primary" : "text-foreground/80"}`}>
+        Agents
       </Link>
     </>
   );
@@ -63,11 +63,9 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-6 md:gap-10">
-          <Link href="/">
-            <a className="flex items-center gap-2">
-              <Building className="h-6 w-6 text-primary" />
-              <span className="font-bold text-xl hidden md:inline-block">SafeHaven Realty</span>
-            </a>
+          <Link href="/" className="flex items-center gap-2">
+            <Building className="h-6 w-6 text-primary" />
+            <span className="font-bold text-xl hidden md:inline-block">SafeHaven Realty</span>
           </Link>
           
           <nav className="hidden md:flex items-center gap-6">
@@ -177,19 +175,19 @@ export function Header() {
               <nav className="flex flex-col gap-4 mt-8">
                 <NavItems />
                 {user && user.role === "agent" && (
-                  <Link href="/properties/create">
-                    <a className="text-sm font-medium transition-colors hover:text-primary">
-                      List Property
-                    </a>
+                  <Link 
+                    href="/properties/create" 
+                    className="text-sm font-medium transition-colors hover:text-primary">
+                    List Property
                   </Link>
                 )}
                 {user ? (
                   <>
-                    <Link href="/dashboard">
-                      <a className="text-sm font-medium transition-colors hover:text-primary flex items-center gap-2">
-                        <LayoutDashboard className="h-4 w-4" />
-                        Dashboard
-                      </a>
+                    <Link 
+                      href="/dashboard" 
+                      className="text-sm font-medium transition-colors hover:text-primary flex items-center gap-2">
+                      <LayoutDashboard className="h-4 w-4" />
+                      Dashboard
                     </Link>
                     <button
                       onClick={handleLogout}
@@ -200,11 +198,11 @@ export function Header() {
                     </button>
                   </>
                 ) : (
-                  <Link href="/auth">
-                    <a className="text-sm font-medium text-primary flex items-center gap-2">
-                      <User className="h-4 w-4" />
-                      Sign In
-                    </a>
+                  <Link 
+                    href="/auth" 
+                    className="text-sm font-medium text-primary flex items-center gap-2">
+                    <User className="h-4 w-4" />
+                    Sign In
                   </Link>
                 )}
               </nav>
