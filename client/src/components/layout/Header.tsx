@@ -18,7 +18,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Menu, User, Home, Building, Heart, MessageSquare, LayoutDashboard, LogOut, Users, Shield } from "lucide-react";
+import { Menu, User, Home, Building, Heart, MessageSquare, LayoutDashboard, LogOut, Users, Shield, Phone, Mail } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 export function Header() {
   const [location] = useLocation();
@@ -72,6 +73,18 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-6">
             <NavItems />
           </nav>
+        </div>
+        
+        <div className="hidden lg:flex items-center gap-4 text-sm">
+          <a href="tel:+14057231782" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+            <Phone className="h-4 w-4" />
+            <span>+1 (405) 723-1782</span>
+          </a>
+          <Separator orientation="vertical" className="h-4" />
+          <a href="mailto:agentbernardologan@gmail.com" className="flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors">
+            <Mail className="h-4 w-4" />
+            <span>agentbernardologan@gmail.com</span>
+          </a>
         </div>
         
         <div className="flex items-center gap-4">
