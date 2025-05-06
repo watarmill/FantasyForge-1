@@ -298,7 +298,7 @@ export default function HomePage() {
               Ready to Find Your Perfect Property?
             </h2>
             <p className="text-lg text-white/90 mb-8">
-              Join thousands of satisfied customers who found their dream homes with EstateHub. 
+              Join thousands of satisfied customers who found their dream homes with SafeHaven Realty. 
               Register now to save your searches, get personalized alerts, and connect with agents.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
